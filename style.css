@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("Logo\ as\ Background.png");
+    background-size: 500px 500px;
+    background-position: center;
+    color: white;
+    position:relative; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-field {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-field label {
+    position: absolute;
+    top: -20px; /* Moves the label above the dropdown */
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-field select,
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field select {
+    margin-top: 20px; /* Adjust to move the dropdown below the label */
+}
+
+.input-field input:focus ~ label,
+.input-field select:focus ~ label {
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+
+
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: #fff;
+}
+
+#remember {
+    accent-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #0074cc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.wrapper a {
+    color: #efefef;
+    text-decoration: underline;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}

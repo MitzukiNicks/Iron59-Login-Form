@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron 59 Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <h2>Welcome Admin</h2>
+
+             <!-- User Type Dropdown -->
+             <div class="input-field">
+                <select id="user-type" required>
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="admin">Admin</option>
+                    <option value="worker">Worker</option>
+                </select>
+                <label for="user-type">User Type</label>
+            </div>
+
+
+            <div class="input-field">
+                <input type="text" required>
+                <label>Enter your Username</label>
+            </div>
+            <div class="input-field">
+                <input type="password" required>
+                <label>Enter your Password</label>
+            </div>
+            <div class="forget">
+                <label for="remember">
+                    <input type="checkbox" id="remember">
+                    <span>Remember Me</span>
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="register">
+                <p>Don't have an account yet? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
